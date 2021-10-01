@@ -1,3 +1,10 @@
+/*
+- started off by stripping all special characters (except space) and numbers from the string
+- then converted string to array of words
+- then checked if word in current iteration matches word or is part of words in rest of array
+- if yes, i pushed that word to the output array
+*/
+
 const stringResponse = (res) => {
 	if (!res) console.log('Please enter a string');
 	else {

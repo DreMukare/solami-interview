@@ -1,3 +1,10 @@
+/*
+- first checked that all inputs were of correct type and if not typecasted to required type
+- created variables to keep track of the eligibility of the different inputs
+- checked eligibility against provided conditions for each input
+- then printed out final eligibility based on all eligiibility conditions
+*/
+
 const eligibleOrNot = (salary, noOfYears, existingLoan) => {
 	if (!Number.isInteger(salary)) Number(salary);
 	if (!Number.isInteger(noOfYears)) Number(noOfYears);
