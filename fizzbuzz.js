@@ -1,9 +1,6 @@
 const fizzBuzz = (m) => {
-	// if (n && m && n >= 1 && n <= 100 && m >= 1 && m <= 100) {
-	// if (m && m >= 1 && m <= 100) {
 	const arrayOfNums = [];
 	let str = '';
-	// for (let i = 0; i < n; i++) {
 	for (let j = 0; j <= m; j++) {
 		arrayOfNums.push(j);
 	}
@@ -15,11 +12,16 @@ const fizzBuzz = (m) => {
 		else if (arrayOfNums[i] % 5 === 0) str += 'Buzz ';
 		else str += 'N/A ';
 	}
-	console.log(str);
-	// }
-	// } else {
-	// 	console.log('Please enter a valid value');
-	// }
+	if (
+		str.includes('Fizz') ||
+		str.includes('Buzz') ||
+		str.includes('FizzBuzz')
+	) {
+		s = str.replace('N/A', '');
+		console.log(s);
+	} else {
+		console.log('N/A');
+	}
 };
 
 fizzBuzz(1);
